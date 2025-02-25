@@ -1,0 +1,548 @@
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+}
+
+html{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+}
+
+#container-principal {
+    display: flex;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+main {
+    flex-grow: 1; 
+    width: 60%;
+    background-color: white; 
+}
+
+aside {
+    width: 40%;
+    background-color: white;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    width: 100%;
+    padding: 1rem 9.75rem;
+    color: white;
+    background-color: #02A28F;
+    background-size: cover;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.25rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.75rem;
+    color: black;
+}
+
+.primeiraSecao, .segundaSecao {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+}
+
+.retangulosPrimeiraSecao {
+    display: grid;
+    grid-template-rows: repeat(4, auto); 
+    gap: 1rem; 
+}
+
+.banner-img {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 0; 
+    align-items: start;
+    margin-left: 8.5rem;
+}
+
+.banner-img img {
+    width: 100%; 
+    height: auto;
+}
+
+.retanguloPostPopulares {
+    width: calc(100% - 156px);
+    height: 2.5rem;
+    background-color: #02A28F;
+    color: #FFFFFF;
+    border-radius: 0.6rem;
+    margin-top: .7rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.retanguloMiniCards {
+    width: calc(100% - 156px);
+    height: 6rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    flex-direction: row;
+    padding: 0.4rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    gap: 0.5rem;
+}
+
+.retanguloMiniCards img {
+    width: 40%;
+}
+
+#retanguloPostMaisRecentes {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: calc(100% - 20%);
+    height: 3rem;
+    background-color: #02A28F;
+    color: #FFFFFF;
+    margin-left: 9.75rem;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+#pVerMais {
+    text-decoration: underline; 
+    color: #FFFFFF; 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 343px 343px;
+    gap: 1rem;
+    margin-left: 9.75rem;
+}
+
+.retangulocards {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-top: 1rem;
+    margin-right: 1.4rem;
+    border-radius: 0.6rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+}
+
+.retangulocards img {
+    width: 100%;
+}
+
+.retangulocards h3 {
+    font-size: 1rem;
+    padding: 0.3rem;
+    margin-left: 1rem;
+}
+
+.retangulocards p {
+    margin-left: 1rem;
+    padding: 0.3rem;
+    font-size: 0.75rem;
+    color: black;
+}
+
+#pVerde {
+    margin-top: 0.3rem;
+    color: #02A28F;
+}
+
+.categorias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.retanguloCategorias {
+    width: calc(100% - 156px);
+    height: 2.5rem;
+    background-color: #02A28F;
+    color: #FFFFFF;
+    border-radius: 0.6rem;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    margin-top: 1.7rem;
+    font-size: 1rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #02A28F;
+    padding: 1rem;
+    background-size: cover;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: .8rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: .7rem;
+    }
+    h3 {
+        font-size: .7rem;
+    }
+
+    p {
+        font-size: 0.6rem;
+    }
+
+    main {
+        flex-grow: 1; 
+        width: 60%;
+        background-color: white; 
+    }
+    
+    aside {
+        width: 40%;
+        background-color: white;
+    }
+    
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title {
+        width: 100%;
+        padding: 1rem 4.9rem;
+        color: white;
+        background-color: #02A28F;
+        background-size: cover;
+    }
+    .primeiraSecao, .segundaSecao {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    
+    .banner-img {
+        display: grid;
+        grid-template-columns: 1fr; 
+        gap: 0; 
+        align-items: start;
+        margin-left: 4rem;
+    }
+    
+    .retangulosPrimeiraSecao {
+        display: grid;
+        grid-template-rows: repeat(4, auto); 
+        gap: .7rem; 
+    }
+    
+    .retanguloPostPopulares {
+        width: calc(100% - 4rem);
+        height: 2rem;
+        background-color: #02A28F;
+        color: #FFFFFF;
+        border-radius: 0.4rem;
+        margin-top: .5rem;
+        padding-left: .7rem;
+        padding-top: 0.3rem;
+        font-size: .7rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    }
+    
+    .retanguloMiniCards {
+        width: calc(100% - 4rem);
+        height: 4.4rem;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        border-radius: 0.4rem;
+        margin:0;
+        font-size: 7rem;
+        padding: 0.4rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+        gap: 0.3rem;
+    }
+
+    .retanguloMiniCards img {
+        width: 45%;
+    }
+    
+    #retanguloPostMaisRecentes {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        width: calc(100% - 15%);
+        height: 3rem;
+        background-color: #02A28F;
+        color: #FFFFFF;
+        margin-left: 4.9rem;
+        border-radius: 0.6rem;
+        padding-left: 1rem;
+        font-size: 1rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    }
+    
+    #pVerMais {
+        text-decoration: underline; 
+        color: #FFFFFF; 
+        margin-right: .7rem;
+    }
+    
+    .cards {
+        width: calc(100% - 15%);
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        margin-left: 4.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .retangulocards {
+        background-color: #FFFFFF;
+        margin-top: .7rem;
+        gap: 0.1rem;
+        border-radius: 0.4rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        text-align: left;
+    }
+    
+    .retangulocards img {
+        width: 100%;
+    }
+    
+    .retangulocards h3 {
+        font-size: .7rem;
+        padding: 0.2rem;
+        margin-left: .7rem;
+    }
+    
+    .retangulocards p {
+        margin-left: .7rem;
+        padding: .2rem;
+        font-size: 0.5rem;
+        color: black;
+    }
+    
+    #pVerde {
+        margin-top: 0.2rem;
+        color: #02A28F;
+    }
+
+    .retanguloCategorias {
+        width: calc(100% - 4rem);
+        height: 2rem;
+        background-color: #02A28F;
+        color: #FFFFFF;
+        border-radius: 0.6rem;
+        margin-right: 8rem;
+        margin-top: 1.3rem;
+        margin-left: 0;
+        padding-left: .7rem;
+        padding-top: 0.3rem;
+        font-size: 1rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    }
+    
+    
+    .categorias {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1.5rem;
+        gap: .7rem;
+    }
+    
+    .parenteses {
+        text-align: right;
+    }
+    
+    footer {
+        background-color: #02A28F;
+        padding: 1rem;
+        background-size: cover;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: .8rem;
+        margin-bottom: 0;
+    }
+    
+
+}
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    body {
+        width: 100%;
+    }
+
+    #container-principal {
+        display: flex;
+        flex-direction: column; /* Empilha os elementos na vertical */
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    aside {
+        width: 100%;
+        padding: 1rem;
+        background-color: white;
+    }
+
+    .title {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h2, h3 {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+
+    .primeiraSecao, .segundaSecao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .retangulosPrimeiraSecao {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .banner-img {
+        width: 110%;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        border-radius: 8;
+    }
+
+    .banner-img img {
+        width: 110%;
+        border-radius: 8;
+    }
+
+    .retanguloPostPopulares,
+    .retanguloMiniCards,
+    .retanguloCategorias {
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+        margin: 0;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    #retanguloPostMaisRecentes {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .retanguloCategorias {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .categorias {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 1rem;
+        margin: 1rem 0;
+    }
+
+
+    .retangulocards {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .retangulocards img {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.8rem;
+    }
+}
